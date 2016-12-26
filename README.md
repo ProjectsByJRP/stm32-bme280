@@ -31,3 +31,5 @@ set prescaler to 8 or higher, clock polarity to high, and phase to two-edge:<br>
   It is very helpful to know what clock speed your peripherals run at.
   
 I2C is not nearly as finicky and just works.
+
+Tested and working on an STM32F446RG-Nucleo, and with the minor changes mentioned above (header file and SPI baud rate prescaler), an STM32F103RB-Nucleo.
