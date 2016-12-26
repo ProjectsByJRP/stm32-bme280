@@ -4,7 +4,10 @@ SPI or I2C methods available
 
 My changes were made to bme280_support.c, and the other two files should be identical to the factory Bosch files.
 
-To get SPI working, set prescaler to 8 or larger, clock polarity to high and phase to two-edge:
+To get SPI working:
+comment out the I2C line and uncomment the SPI line in bme280_support.c lines 157/158
+
+set prescaler to 8 or larger, clock polarity to high and phase to two-edge:
 
   hspi2.Instance = SPI2;<br>
   hspi2.Init.Mode = SPI_MODE_MASTER;<br>
