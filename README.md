@@ -32,4 +32,4 @@ set prescaler to 8 or higher, clock polarity to high, and phase to two-edge:<br>
   
 I2C is not nearly as finicky and just works.
 
-Tested and working on an STM32F446RG-Nucleo, and with the minor changes mentioned above (header file and SPI baud rate prescaler), an STM32F103RB-Nucleo.
+Tested and working on an STM32F446RE-Nucleo, and with the minor changes mentioned above (header file and SPI baud rate prescaler), an STM32F103RB-Nucleo.
