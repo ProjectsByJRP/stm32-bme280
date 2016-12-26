@@ -5,6 +5,8 @@ SPI or I2C methods available
 This was originally written on an STM32F446RE-Nucleo so its header file is stm32f4xx_hal.h
 If you use something like an STM32F103RB-Nucleo, you would need to change that to stm32f1xx_hal.h, or stm32l4xx_hal.h for an STM32L476, et cetera.
 
+This code also assumes that you route printf() to usart2.
+
 My changes were made to bme280_support.c, and the other two files should be identical to the factory Bosch files.
 
 To get SPI working:<br>
@@ -27,3 +29,4 @@ set prescaler to 8 or larger, clock polarity to high and phase to two-edge:<br>
   Basically we need to get the SPI clock speed under 10MHz (according to the data sheet, pg.36)<br>
   For for an stm32f103, use a prescaler of 4 to yield 8 Mb/s clock speed.
   
+I2C is not nearly as finicky and just works.
