@@ -24,5 +24,6 @@ set prescaler to 8 or larger, clock polarity to high and phase to two-edge:<br>
   hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;<br>
   hspi2.Init.CRCPolynomial = 10;<br>
  
-  Basically we need to get the SPI clock speed under 10Mb/s (according to the data sheet, pg.36) for for an stm32f103, use a prescaler of 4 to yield 8 Mb/s
+  Basically we need to get the SPI clock speed under 10Mb/s (according to the data sheet, pg.36)<br>
+  For for an stm32f103, use a prescaler of 4 to yield 8 Mb/s clock speed.
   
